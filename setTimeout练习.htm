@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>setTimeout练习</title>
+    <script type="text/javascript">
+           var c=0;
+		   var t;
+      /*  function start()
+       {
+		   document.writeln("ooooooo");
+		  document.getElementById("text").value=c;
+          c=c+1;
+          t=setTimeout("start()",1000);
+		  document.writeln("hdcvdh");
+         
+       }
+       function stop(){
+        clearTimeout(t);
+            
+       }*/
+	   
+		    var c=0;
+			var t;
+			function startcount()//若函数名改为start()则不执行，不知道为神马？？？
+			{
+		    document.getElementById("text").value=c;
+            c=c+1;
+             t= setTimeout("startcount()",1000);
+				}
+         function stop(){
+        clearTimeout(t);
+            
+       }
+		
+    </script>
+</head>
+<body>
+
+<form>
+<input type="button" name="button3" onclick="startcount()" value="开始">
+
+<input type="text" id="text">
+<input type="button" name="button2" onclick="stop()" value="暂停">
+
+</form>
+</body>
+</html>

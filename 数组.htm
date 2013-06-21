@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    
+    var n=window.prompt("请输入总人数！");
+    var scores=new Array();
+    var sum=0;
+     for(var i=0;i<n;i++)
+       {
+        scores[i]=parseFloat( window.prompt("请输入第"+(i+1)+"个学生的成绩！"));
+       }
+       //求和
+        for(var i=0;i<scores.length;i++)
+        {
+          sum=sum+scores[i];
+        }
+        
+        //
+        document.write("");
+        for(var i=0;i<scores.length;i++)
+        {
+            document.writeln(scores[i]);
+        }
+        document.writeln("<br>总成绩是"+sum+";平均成绩是"+sum/scores.length);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
