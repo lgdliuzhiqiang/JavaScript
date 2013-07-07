@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>利用js实现界面件跳转</title>
+
+<script language="javascript"><!-- 
+function old_page() 
+{ 
+window.location = "http://www.jb51.net" 
+} 
+function replace() 
+{ 
+window.location.replace("http://www.jb51.net") 
+} 
+function new_page() 
+{ 
+window.open("http://www.jb51.net") 
+} 
+// --></script> 
+
+
+</head>
+
+<body>
+
+<input type="button" onclick="new_page()" value="new_page"/> 
+
+ 
+<input type="button" onclick="old_page()" value="old_page"/> 
+
+ 
+<input type="button" onclick="replace()" value="replace"/> 
+
+<!--详细出处参考：http://www.jb51.net/article/17585.htm
+window.location和window.open的区别 
+window.location = "http://www.jb51.net" 跳转后有后退功能 
+window.location.replace("http://www.jb51.net") 跳转后没有后退功能 
+window.open("http://www.jb51.net") 要新的窗口打开链接 
+详细出处参考：http://www.jb51.net/article/17585.htm
+-->
+</body>
+</html>
